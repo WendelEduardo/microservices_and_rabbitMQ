@@ -4,7 +4,7 @@ import br.com.alurafood.pagamentos.dto.PagamentoDto;
 import br.com.alurafood.pagamentos.http.PedidoClient;
 import br.com.alurafood.pagamentos.model.Pagamento;
 import br.com.alurafood.pagamentos.model.Status;
-import br.com.alurafood.pagamentos.repository.PagamentoRepositoy;
+import br.com.alurafood.pagamentos.repository.PagamentoRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,7 +18,7 @@ import java.util.Optional;
 public class PagamentoService {
 
     @Autowired
-    private PagamentoRepositoy repository;
+    private PagamentoRepository repository;
 
     @Autowired
     private ModelMapper modelMapper;
